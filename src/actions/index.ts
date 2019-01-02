@@ -60,4 +60,5 @@ export const deleteStream = (id: any) => async (dispatch: any) => {
   await streams.delete(`/streams/${id}`);
 
   dispatch({ type: DELETE_STREAM, payload: id });
+  history.push("/");
 };
